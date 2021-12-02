@@ -10,8 +10,7 @@ def teamview(id):
     cur.execute("select Team_Name,Leader_Name,Leader_Id,Leader_Image,Member_Name,Member_Id,Member_Image,Title,Supervisor,`Co-Supervisor`,Description,Objective,Motivation from defense where Leader_Id = '"+str(id)+"'")
     hol=cur.fetchone()
 
-    with st.container():
-        st.subheader(hol[0])
+    with st.expander(hol[0], expanded=True):
         st.subheader("Title: "+hol[7])
         col1, col2 = st.columns(2)
         with col1:
