@@ -11,7 +11,7 @@ def teamview(id):
     hol=cur.fetchone()
     #st.header(hol[0])
     #
-    with st.container(hol[0]):
+    with st.container():
         st.subheader(hol[0])
         st.subheader("Title: "+hol[7])
         col1, col2 = st.columns(2)
