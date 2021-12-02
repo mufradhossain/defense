@@ -1,10 +1,7 @@
 import streamlit as st
-import mysql.connector
+import sqlite3
 
-def init_connection():
-    return mysql.connector.connect(**st.secrets["mysql"])
-
-conn = init_connection()
+conn = sqlite3.connect('diucse.db')
 
 
 def teamview(id):
