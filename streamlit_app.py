@@ -11,7 +11,7 @@ def teamview(id):
     hol=cur.fetchone()
     #st.header(hol[0])
     #
-    with st.expander(hol[0],expanded=False):
+    with st.expander(hol[0],expanded=True):
         st.subheader("Title: "+hol[7])
         col1, col2 = st.columns(2)
         with col1:
@@ -25,11 +25,11 @@ def teamview(id):
                 st.write("ID: "+hol[5])
             except:
                 pass
-        st.info("Supervisor: "+hol[8])
-        st.info("Co-Supervisor: "+hol[9])
-        st.info("Description: "+hol[10])
-        st.info("Objective: "+hol[11])
-        st.info("Motivation: "+hol[12])
+        st.info("**Supervisor** : "+hol[8])
+        st.info("**Co-Supervisor** : "+hol[9])
+        st.info("**Description** : "+hol[10])
+        st.info("**Objective**: "+hol[11])
+        st.info("**Motivation**: "+hol[12])
     return
 
 
