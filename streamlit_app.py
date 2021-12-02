@@ -12,12 +12,12 @@ def teamview(id):
     st.header(hol[0])
     col1, col2 = st.columns(2)
     with col1:
-        st.image(hol[3],width=150)
+        st.image(hol[3],use_column_width=auto)
         st.write(hol[1]+" (Leader)")
         st.write("ID: "+hol[2])
     with col2:
         try:
-            st.image(hol[6],width=150)
+            st.image(hol[6],use_column_width=auto)
             st.write(hol[4])
             st.write("ID: "+hol[5])
         except:
