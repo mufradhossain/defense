@@ -9,8 +9,7 @@ def teamview(id):
     cur= conn.cursor()
     cur.execute("select Team_Name,Leader_Name,Leader_Id,Leader_Image,Member_Name,Member_Id,Member_Image,Title,Supervisor,`Co-Supervisor`,Description,Objective,Motivation from defense where Leader_Id = '"+str(id)+"'")
     hol=cur.fetchone()
-    #st.header(hol[0])
-    #
+
     with st.container():
         st.subheader(hol[0])
         st.subheader("Title: "+hol[7])
