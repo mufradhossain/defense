@@ -16,9 +16,13 @@ def teamview(id):
         st.image(hol[3],width=150)
         st.write("ID: "+hol[2])
     with col2:
-        st.write(hol[4])
-        st.image(hol[6],width=150)
-        st.write("ID: "+hol[5])
+        try:
+            st.write(hol[4])
+            st.image(hol[6],width=150)
+            st.write("ID: "+hol[5])
+        except:
+            pass
+
     st.subheader("Title: "+hol[7])
     st.write("Supervisor: "+hol[8])
     st.write("Co-Supervisor: "+hol[9])
