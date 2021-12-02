@@ -26,9 +26,9 @@ def teamview(id):
                 pass
         st.info("**Supervisor** : "+hol[8])
         st.info("**Co-Supervisor** : "+hol[9])
-        st.info("**Description** : "+hol[10])
-        st.info("**Objective**: "+hol[11])
-        st.info("**Motivation**: "+hol[12])
+        st.write("**Description** : "+hol[10])
+        st.write("**Objective**: "+hol[11])
+        st.write("**Motivation**: "+hol[12])
     return
 
 
